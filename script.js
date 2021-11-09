@@ -18,6 +18,8 @@ for (let i = 0;i<=1000;i++){
 
 const btn = document.querySelectorAll("button");
 btn.forEach(item=>{
+    item.addEventListener('touchmove'.(e)=>{
+        e.target.style.backgroundColor=`rgb(${getRandomIntInclusive(0, 255)},${getRandomIntInclusive(0, 255)},${getRandomIntInclusive(0, 255)})`; });
     item.addEventListener('mouseenter',(e)=>{
         e.target.style.backgroundColor=`rgb(${getRandomIntInclusive(0, 255)},${getRandomIntInclusive(0, 255)},${getRandomIntInclusive(0, 255)})`;
         /* let aud = new Audio();
